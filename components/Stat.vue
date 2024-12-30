@@ -1,30 +1,98 @@
 <template>
-  <!-- Features -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <!-- Grid -->
-    <div class="grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
-      <!-- Stats -->
-      <div>
-        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">Siswa</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">1500</p>
-      </div>
-      <!-- End Stats -->
-
-      <!-- Stats -->
-      <div>
-        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">Guru</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">60</p>
-      </div>
-      <!-- End Stats -->
-
-      <!-- Stats -->
-      <div>
-        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">Jurusan</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">5</p>
-      </div>
-      <!-- End Stats -->
+  <div ref="statsSection">
+    <div class="max-w-2xl mx-auto text-center mb-10">
+      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">Data Statistik</h2>
     </div>
-    <!-- End Grid -->
+    <!-- Features -->
+    <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-blue-600">
+      <!-- Grid -->
+      <div class="grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-4 lg:gap-8">
+        <!-- Stats -->
+        <div>
+          <h4 class="text-lg sm:text-xl font-semibold text-white text-center">Siswa</h4>
+          <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white text-center">
+            {{ siswa }}
+          </p>
+        </div>
+        <!-- End Stats -->
+        <div>
+          <h4 class="text-lg sm:text-xl font-semibold text-white text-center">Guru</h4>
+          <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white text-center">
+            {{ guru }}
+          </p>
+        </div>
+        <!-- End Stats -->
+        <div>
+          <h4 class="text-lg sm:text-xl font-semibold text-white text-center">Rombel</h4>
+          <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white text-center">
+            {{ rombel }}
+          </p>
+        </div>
+        <!-- End Stats -->
+        <div>
+          <h4 class="text-lg sm:text-xl font-semibold text-white text-center">Kompetensi Keahlian</h4>
+          <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white text-center">
+            {{ kompetensiKeahlian }}
+          </p>
+        </div>
+        <!-- End Stats -->
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- End Features -->
   </div>
-  <!-- End Features -->
 </template>
+
+<script setup>
+const siswa = ref(0);
+const guru = ref(0);
+const rombel = ref(0);
+const kompetensiKeahlian = ref(0);
+const statsSection = ref(null); // Untuk mereferensikan elemen section
+
+let hasAnimated = false; // Untuk mencegah animasi berjalan berkali-kali
+
+// Function untuk animasi angka
+const animateNumber = (refVar, target, duration = 2000) => {
+  let start = 0;
+  const increment = target / (duration / 16); // 60 fps
+  const animate = () => {
+    start += increment;
+    if (start < target) {
+      refVar.value = Math.floor(start);
+      requestAnimationFrame(animate);
+    } else {
+      refVar.value = target; // Set ke nilai akhir
+    }
+  };
+  animate();
+};
+
+// Function untuk memulai animasi ketika elemen terlihat
+const startAnimation = () => {
+  if (!hasAnimated) {
+    animateNumber(siswa, 1500);
+    animateNumber(guru, 85);
+    animateNumber(rombel, 45);
+    animateNumber(kompetensiKeahlian, 5);
+    hasAnimated = true;
+  }
+};
+
+// Menggunakan IntersectionObserver untuk mendeteksi elemen di viewport
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting) {
+        startAnimation();
+      }
+    },
+    { threshold: 0.5 } // Jalankan animasi jika 50% dari elemen terlihat
+  );
+
+  if (statsSection.value) {
+    observer.observe(statsSection.value);
+  }
+});
+</script>
+
