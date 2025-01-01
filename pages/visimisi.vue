@@ -1,6 +1,6 @@
 <template>
     <div class="bg-gray-50 w-full pt-20">
-        <div class="p-10 bg-white shadow-lg rounded-lg mx-auto my-auto max-w-6xl">
+        <div data-aos="fade-up" class="p-10 bg-white shadow-lg rounded-lg mx-auto my-auto max-w-6xl">
             <h3 class="text-xl text-center mb-5 font-extrabold text-gray-900">
                 Visi Misi SMK Negeri 4 Tasikmalaya
             </h3>
@@ -30,7 +30,7 @@
                 kehidupan sehari-hari.
             </p>
         </div>
-        <div class="bg-gray-50 w-full pt-20 pb-20">
+        <div data-aos="fade-up" class="bg-gray-50 w-full pt-20 pb-20">
             <div class="p-10 bg-white shadow-lg rounded-lg mx-auto my-auto max-w-6xl">
                 <h3 class="text-xl text-center mb-5 font-extrabold text-gray-900">
                     Tujuan SMK Negeri 4 Tasikmalaya

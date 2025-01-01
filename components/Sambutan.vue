@@ -3,7 +3,7 @@
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Grid -->
     <div class="flex justify-center items-center flex-col sm:flex-row md:gap-20 xl:gap-20 ">
-      <div class="w-full">
+      <div data-aos="fade-up" class="w-full">
         <img class="rounded-xl bg-blue-600" src="~/assets/img/kepala.png" alt="Features Image" />
       </div>
       <!-- End Col -->
@@ -11,12 +11,13 @@
       <div class="mt-5 sm:mt-10 lg:mt-0">
         <div class="space-y-6 sm:space-y-8">
           <!-- Title -->
-          <div class="space-y-2 md:space-y-4">
+          <div data-aos="fade-up" class="space-y-2 md:space-y-4" >
             <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">Sambutan Kepala Sekolah</h2>
             <h2 class="font-bold text-xl lg:text-2xl text-gray-800">Kurniawan, S.Pd., M.Pd</h2>
             <p class="text-gray-500">
               Assalamualaikum Warahmatullahi Wabarakatuh<br>
-              Selamat datang di website SMKN 4 Tasikmalaya. Segala puji dan syukur kita panjatkan kehadirat Allah SWT, semoga
+              Selamat datang di website SMKN 4 Tasikmalaya. Segala puji dan syukur kita panjatkan kehadirat Allah SWT,
+              semoga
               kita semua ada dalam lindungan-Nya. Dan atas perkenan-Nya pula kami dapat menghadirkan website SMK Negeri
               4 Tasikmalaya ini. Kami berharap dengan adanya website di SMK Negeri 4 Tasikmalaya ini para pengunjung
               dapat mengenal lebih jauh tentang sekolah kami sehingga dapat mempererat tali silaturrahmi antara sekolah
@@ -40,3 +41,4 @@
   </div>
   <!-- End Features -->
 </template>
+

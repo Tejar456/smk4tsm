@@ -8,7 +8,7 @@
     </div>
     <!-- End Title -->
 
-    <div class="flex justify-center gap-x-6 sm:gap-x-12 flex-wrap lg:gap-x-24">
+    <div  data-aos="fade-up" class="flex justify-center gap-x-6 sm:gap-x-12 flex-wrap lg:gap-x-24">
       <img
         class="py-3 lg:py-5 w-16 h-auto md:w-24 lg:w-28 mx-auto sm:mx-0 object-contain"
         src="/assets/img/kerjasama/agate.png"

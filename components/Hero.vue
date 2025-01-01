@@ -32,39 +32,19 @@
                   </div>
                 </div>
               </div>
-
               <!-- End Item -->
-
               <!-- Item -->
-              <div class="hs-carousel-slide">
-                <div
-                  class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-                  <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                    <span class="block text-white">CoolApps</span>
-                    <span class="block text-white text-xl md:text-3xl">From mobile apps to gaming consoles</span>
-                    <div class="mt-5">
-                      <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                        href="#">
-                        Read Case Studies
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Item -->
-
-              <!-- Item -->
-              <div class="hs-carousel-slide">
-                <div
-                  class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('https://images.unsplash.com/photo-1629666451094-8908989cae90?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-                  <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                    <span class="block text-white">Grumpy</span>
-                    <span class="block text-white text-xl md:text-3xl">Bringing Art to everything</span>
-                    <div class="mt-5">
-                      <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                        href="#">
-                        Read Case Studies
-                      </a>
+              <div class="hs-carousel-slide ">
+                <div class="bg-black z-[1]">
+                  <div
+                    class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col relative bg-[url('~/assets/img/hero2.jpg')] bg-cover bg-blend-multiply bg-center bg-no-repeat">
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-black opacity-30 z-[2]"></div>
+                    <!-- Content -->
+                    <div class="relative mt-auto w-screen md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10 z-[3]">
+                      <span class="block text-white text-xl md:text-3xl opacity-100 font-bold">
+                        SMK Pusat keunggulan<br>SMKN 4 Tasikmalaya
+                      </span>
                     </div>
                   </div>
                 </div>

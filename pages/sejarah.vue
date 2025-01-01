@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-50 w-full pt-20">
-    <div class="p-10 bg-white shadow-lg rounded-lg mx-auto my-auto max-w-6xl">
+  <div class="bg-gray-50 w-full pt-20 ">
+    <div  data-aos="fade-up" class="p-10 bg-white shadow-lg rounded-lg mx-auto my-auto max-w-6xl">
       <h3 class="text-xl text-center mb-5 font-extrabold text-gray-900">
         Sejarah SMK Negeri 4 Tasikmalaya
       </h3>
@@ -22,7 +22,7 @@
         Perizinan Terpadu Kota Tasikmalaya No. 420/9/SK-BPPT/2012 Tanggal 06 Februari 2012.
       </p>
     </div>
-    <div class="p-10 pt-10 bg-white shadow-lg rounded-lg mx-auto mt-10 max-w-6xl mb-20">
+    <div data-aos="fade-up" class="p-10 pt-10 bg-white shadow-lg rounded-lg mx-auto mt-10 max-w-6xl mb-20">
       <h3 class="text-xl text-center mb-5 font-extrabold text-gray-900">
         Identitas SMK Negeri 4 Tasikmalaya
       </h3>

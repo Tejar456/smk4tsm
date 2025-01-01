@@ -7,9 +7,9 @@
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-2">
       <!-- Icon Block -->
-      <a class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
+      <a data-aos="fade-up" data-aos-delay="0" class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
         href="#">
-        <div class="flex items-center gap-5">
+        <div  class="flex items-center gap-5">
           <div class="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
             <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-23.63 -23.63 141.76 141.76" xml:space="preserve"
@@ -52,10 +52,9 @@
       <!-- End Icon Block -->
 
       <!-- Icon Block -->
-      <a class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
+      <a data-aos="fade-up" data-aos-delay="200" class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
         href="#">
-        <div class="flex items-center gap-5">
-
+        <div  class="flex items-center gap-5">
           <div class="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
             <svg viewBox="-276.48 -276.48 1576.96 1576.96" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
               fill="#000000">
@@ -88,10 +87,10 @@
       <!-- End Icon Block -->
 
       <!-- Icon Block -->
-      <a class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
+      <a data-aos="fade-up" data-aos-delay="400"
+        class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
         href="#">
         <div class="flex items-center gap-5">
-
           <div class="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
             <svg fill="#ffffff" height="256px" width="256px" version="1.1" id="Capa_1"
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -106,7 +105,6 @@
             </svg>
           </div>
           <div>
-
             <h3 class="group-hover:text-gray-600 text-lg font-semibold text-gray-800">TSM</h3>
           </div>
         </div>
@@ -125,10 +123,10 @@
       <!-- End Icon Block -->
 
       <!-- Icon Block -->
-      <a class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
+      <a data-aos="fade-up" data-aos-delay="0"
+        class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
         href="#">
         <div class="flex items-center gap-5">
-
           <div class="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
             <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
               xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
@@ -198,10 +196,10 @@
       <!-- End Icon Block -->
 
       <!-- Icon Block -->
-      <a class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
+      <a data-aos="fade-up" data-aos-delay="200"
+        class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7"
         href="#">
         <div class="flex items-center gap-5">
-
           <div class="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
             <svg viewBox="-12.7 -12.7 76.20 76.20" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
               fill="#ffffff" stroke="#ffffff">

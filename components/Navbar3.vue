@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center">
         <!-- ========== HEADER ========== -->
-        <header
+        <header data-aos="fade-down"
             class="bg-white fixed top-3 border rounded-2xl border-gray-300 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-[95%] drop-shadow-md">
             <nav
                 class="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 sm:px-6 lg:px-8 py-2">
@@ -10,7 +10,6 @@
                     <img src="/assets/img/Logo.png" class="w-10 md:mr-2" alt="">
                     <h2 class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80"
                         aria-label="Brand">SMKN 4 Tasikmalaya</h2>
-
                     <!-- Collapse Button -->
                     <div class="md:hidden">
                         <button type="button"
@@ -46,7 +45,8 @@
                         class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
                         <div
                             class="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
-                            <NuxtLink class="p-2 flex items-center text-sm text-gray-800 focus:outline-none hover:text-blue-600 focus:text-blue-600"
+                            <NuxtLink
+                                class="p-2 flex items-center text-sm text-gray-800 focus:outline-none hover:text-blue-600 focus:text-blue-600"
                                 to="/" aria-current="page">
                                 Home
                             </NuxtLink>
@@ -70,17 +70,20 @@
                                     role="menu" aria-orientation="vertical"
                                     aria-labelledby="hs-header-classic-dropdown">
                                     <div class="py-1 md:px-1 space-y-0.5">
-                                        <NuxtLink class="py-1.5 px-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                                        <NuxtLink
+                                            class="py-1.5 px-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                             to="/profil">
                                             Profil
                                         </NuxtLink>
 
-                                        <NuxtLink class="py-1.5 px-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                                        <NuxtLink
+                                            class="py-1.5 px-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                             to="sejarah">
                                             Sejarah
                                         </NuxtLink>
 
-                                        <NuxtLink class="py-1.5 px-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                                        <NuxtLink
+                                            class="py-1.5 px-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                             to="visimisi">
                                             VIsi & Misi
                                         </NuxtLink>
@@ -90,17 +93,20 @@
                             </div>
                             <!-- End Dropdown -->
 
-                            <NuxtLink class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <NuxtLink
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="/berita">
                                 Berita
                             </NuxtLink>
 
-                            <NuxtLink class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <NuxtLink
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="/ekskul">
                                 Ekstrakurikuler
                             </NuxtLink>
 
-                            <NuxtLink class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <NuxtLink
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="/gallery">
                                 Gallery
                             </NuxtLink>
